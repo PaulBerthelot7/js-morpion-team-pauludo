@@ -2,7 +2,7 @@
 {
     width: 250px;
     height: 250px;
-    background-color: black;
+    background-color: orange;
     border : 1px solid #555;
     margin: 50px auto;
     box-shadow: 3px 8px 3px #bbb;
@@ -15,6 +15,7 @@
     width: 190px;
     margin: auto;
     clear: both;
+
 }
 
 #jeu button
@@ -23,10 +24,16 @@
     height: 50px;
     margin: 5px;
     float: left;
+    font-weight: bold;
 }
 
 #jeuStatut
 {
     color: white;
     padding: 15px 10px;
+}
+
+body
+{
+    background-color: ;
 }
