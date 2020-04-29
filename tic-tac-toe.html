@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="tic-tac-toe.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <link href="script.js." rel="stylesheet">
         <title>TTT par Paul et Ludo</title>
         <meta charset="UTF-8"/>
     </head>
@@ -26,23 +27,6 @@
             <div id="jeuStatus"></div>
         </div>
 
-
-
-        <!-- innerHTML = 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        -->
         <script type="text/javascript">
 
             function estvalide(button){
@@ -147,7 +131,7 @@
                             //Le jeu n'est pas encore fini (in game)
                             currentTurn++;//1//2
                             currentTurn = currentTurn % 2;//1//0
-                            afficheur.sendMessage("joueur" + joueurs[currentTurn] + " à votre tour !");
+                            afficheur.sendMessage("Joueur " + joueurs[currentTurn] + " à votre tour !");
                         }
                     });
                 }
