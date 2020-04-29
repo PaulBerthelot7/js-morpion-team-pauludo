@@ -86,7 +86,7 @@ var pions = document.getElementById("jeu").children; // nos boutons
             }
 
             function main() { // fonction principale
-                afficheur.innerHTML = "Le jeu peut démarrer. <br/> Joueur " + joueurs[currentTurn].id + " C'est votre tour."; // envoyer ce message pour l'afficher
+                afficheur.innerHTML = "Le jeu peut démarrer. <br/> Joueur " + joueurs[currentTurn].id + " c'est votre tour."; // envoyer ce message pour l'afficher
 
                 for(var i = 0, len = pions.length; i < len; i++){
                     pions[i].addEventListener("click", userClick);
