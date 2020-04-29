@@ -14,4 +14,5 @@ Vous trouverez sinon :
 -Le fichier <em>"script.js"</em> 
 <br/>
 
-Merci et <u>bon jeu !</u>
+Merci et<span style="text-decoration: underline;">bon jeu !</span>
+bon jeu !
