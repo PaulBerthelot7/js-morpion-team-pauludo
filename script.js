@@ -5,7 +5,7 @@ var pions = document.getElementById("jeu").children; // nos boutons
                         icon: '<img src="iconfinder_fish_5404332.svg" alt="fish">'
                     }, {
                         id:'Chat',
-                        icon: 'chat'
+                        icon: '<img src="iconfinder_039_026_cat_black_witch_halloween_3792014.svg" alt="fish">'
                     }
                 ];
                 var wins = [
