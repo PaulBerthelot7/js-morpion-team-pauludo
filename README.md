@@ -9,7 +9,7 @@ Vous trouverez sinon :
 <br/>
 -Le fichier <em>"style.css"</em>
 <br/>
--Le fichier <em>"tic-tac-toe.html"</em> qui contient le jeu.
+-Le fichier <em>"morpion.html"</em> qui contient le jeu.
 <br/>
 -Le fichier <em>"script.js"</em> 
 <br/>
