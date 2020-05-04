@@ -1,4 +1,5 @@
-var pions = document.getElementById("jeu").children; // nos boutons
+        $(document).ready(function(){ 
+        var pions = document.getElementById("jeu").children; // nos boutons
                 var joueurs = [
                     {
                         id:'Poisson',
@@ -19,10 +20,18 @@ var pions = document.getElementById("jeu").children; // nos boutons
                     [2,4,6]
                 ]
                 var currentTurn = 1; // le tour du joueur
-                var jeuestfinit = false; // si le jeux est finit
+                var jeuEstFini = false; // si le jeux est finit
                 var afficheur = document.querySelector("#jeuStatus"); // permet un nouvelle affichage
                 
                 
+            
+            //pour le bouton quitter
+            function fermer() {
+                opener=self;
+                self.close();
+                }
+
+            //
 
             function estValide(button){
                 return button.innerHTML.length == 0; // retourne si il y a quelque chose dans les cases.
@@ -47,7 +56,7 @@ var pions = document.getElementById("jeu").children; // nos boutons
                 }
             }
 
-            function TableauEstPlein(pions){ // vérifie si le tableau est plein
+            function tableauEstPlein(pions){ // vérifie si le tableau est plein
                 for(var i = 0, len = pions.length; i < len; i++){
                     if(pions[i].innerHTML.length == 0)
                         return false;
@@ -58,7 +67,7 @@ var pions = document.getElementById("jeu").children; // nos boutons
             
             
             function userClick() {
-                if(jeuestfinit) // retourne false si le jeux est finit.
+                if(jeuEstFini) // retourne false si le jeux est finit.
                 return;
 
                 if (!estValide(this)){
@@ -66,15 +75,15 @@ var pions = document.getElementById("jeu").children; // nos boutons
                 } else{
                     setSymbol(this, joueurs[currentTurn].icon);
 
-                    jeuestfinit = rechercherVainqueur(pions, joueurs, currentTurn);
+                    jeustFini = rechercherVainqueur(pions, joueurs, currentTurn);
 
                     //Le jeu est finit (Quelqu'un a gagné)
-                    if(jeuestfinit){
+                    if(jeuEstFini){
                         afficheur.innerHTML = "Joueur " + joueurs[currentTurn].id + " à gagné !";
                         return;
                     }
                     //Le jeu est finit (Match nul)
-                    if(TableauEstPlein(pions)){
+                    if(tableauEstPlein(pions)){
                         afficheur.innerHTML = "Match null !!";
                         return;
                     }
@@ -93,3 +102,5 @@ var pions = document.getElementById("jeu").children; // nos boutons
                 }
             }
             main();
+
+        })
