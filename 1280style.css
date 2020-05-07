@@ -2,11 +2,11 @@
 
 #jeu 
 {
-    width: 405px;
-    height: 410px;
+    width: 240px;
+    height: 250px;
     background-color: black;
     border : 1px solid #555;
-    margin: 10px auto;
+    margin: 50px auto;
     /* box-shadow: 3px 8px 3px #bbb; */
     padding: 10px;
     overflow: auto;
@@ -23,8 +23,8 @@
 
 #jeu div
 {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
     margin: 5px;
     float: left;
     font-weight: bold;
@@ -56,26 +56,15 @@ body
     padding:10px;
     background:#CCC;
     width: 1000px;
-    margin-left: 20%;
+    margin-bottom: 10%;
+   
 }
     
-#bouton {
-    border-radius:12px 0 12px 0;
-    background: #478bf9;
-    border:none;
-    color:#fff;
-    font:bold 12px Verdana;
-    padding:6px 0 6px 0;
-}
-#titre{
+ 
+p {
 
-font-size: 80px;
+font-size: 200px;
 }
-
-#txt{
-    font-size: 10px;
-}
-
     
 a{
     font-size: 50px;
@@ -97,7 +86,7 @@ margin-top: 5%;
 
 .tic_tac{
 
- margin-left: 1%;
+ margin-left: 2%;
  margin-top: 1%;
 
 }
@@ -118,8 +107,5 @@ margin-top: 5%;
 }
 
 .icon_poisson {
-    width: 70px;
-}
-.icon_chien{
     width: 70px;
 }
