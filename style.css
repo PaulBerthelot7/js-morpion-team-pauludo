@@ -56,6 +56,7 @@ body
     padding:10px;
     background:#CCC;
     width: 1000px;
+    margin-bottom: 10%;
    
 }
     
@@ -72,26 +73,39 @@ a{
         
 .chat_position{
 float: left;
-margin-left: 250px;
-margin-top: 90px;
+margin-left: 10%;
+margin-top: 5%;
 }
 
 .poisson_position{
     float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 20%;
 }
 
 .tic_tac{
 
- margin-right: 30px;
+ margin-left: 1%;
+ margin-top: 1%;
+
 }
 
 .chat_position_game{
     float: left;
-    margin-left: 200px;
-    margin-top: 90px;
+    margin-left: 10%;
+    margin-top: 3%;
     }
     
 .poisson_position__game{
     
-   z
+   float: left;
+}
+
+.icon_chi {
+    width: 70px;
+}
+
+.icon_poisson {
+    width: 70px;
 }

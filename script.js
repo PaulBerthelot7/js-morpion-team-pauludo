@@ -3,10 +3,10 @@
                 var joueurs = [
                     {
                         id:'Poisson',
-                        icon: '<img src="images/iconfinder_fish_5404332.svg" alt="fish">'
+                        icon: '<img class="icon_poisson" src="images/poisson_clown.png" alt="fish">'
                     }, {
                         id:'Chat',
-                        icon: '<img src="images/iconfinder_039_026_cat_black_witch_halloween_3792014.svg" alt="fish">'
+                        icon: '<img class="icon_chi" src="images/chi.png" alt="cat">'
                     }
                 ];
                 var wins = [
@@ -20,7 +20,7 @@
                     [2,4,6]
                 ]
                 var currentTurn = 1; // le tour du joueur
-                var jeuEstFini = false; // si le jeux est finit
+                var jeuEstFini = false; // si le jeux est fini
                 var afficheur = document.querySelector("#jeuStatus"); // permet un nouvelle affichage
                 
                 
@@ -36,6 +36,7 @@
             function estValide(button){
                 return button.innerHTML.length == 0; // retourne si il y a quelque chose dans les cases.
             }
+
 
             function setSymbol(btn, symbole){
                 console.log('Setting symbole');
@@ -75,7 +76,7 @@
                 } else{
                     setSymbol(this, joueurs[currentTurn].icon);
 
-                    jeustFini = rechercherVainqueur(pions, joueurs, currentTurn);
+                    jeuEstFini = rechercherVainqueur(pions, joueurs, currentTurn);
 
                     //Le jeu est finit (Quelqu'un a gagné)
                     if(jeuEstFini){
